@@ -1,0 +1,17 @@
+<section (contextmenu)="PreventContextMenu($event)">
+  <div class="start-game-div" #startDiv>
+    <button class="start-btn" mat-raised-button color="accent" (click)="StartGame()">
+      <mat-icon>gamepad</mat-icon>
+      <span>Start game</span>
+    </button>
+  </div>
+
+  <section class="container">
+    <app-header [User]="UserName"></app-header>
+    <app-game-body [Diff]="CurrDiff"></app-game-body>
+    <app-footer></app-footer>
+    <!-- <button [swal]="['Oops!', 'This is not implemented yet :/', 'warning']">
+    Do it!
+  </button> -->
+  </section>
+</section>

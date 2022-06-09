@@ -1,0 +1,75 @@
+/*start of nav */
+.nav {
+  padding: 20px 5%;
+  width: inherit;
+  height: auto;
+  max-height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 25px var(--nav-shadow-color);
+}
+
+.Title {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 25px;
+}
+
+@media (max-width: 600px){
+  .nav{
+    flex-direction: column;
+  }
+
+  .Title{
+    margin: 10px 0;
+  }
+}
+.User button {
+  color: var(--icons-color);
+}
+
+.User button h6,
+.User button h5 {
+  /* font-weight:500; */
+  display: inline;
+}
+
+/* icons start*/
+.icons{
+  width: 150px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icons button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.restart:hover mat-icon {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(1turn);
+  }
+
+  100% {
+    transform: rotate(0turn);
+  }
+}
+/* icons end */
+/*end of nav */

@@ -1,0 +1,33 @@
+<mat-toolbar color="primary" class="nav">
+  <div class="User">
+    <button mat-raised-button color="accent" title="change User Name" (click)="changeUserName()">
+      <h6>{{User}}</h6>
+    </button>
+  </div>
+
+  <div class="Title">
+    <mat-icon>gamepad</mat-icon>Memorize Game
+  </div>
+
+  <audio src="assets/Sound/SWOOSH.mp3" #Flip hidden></audio>
+  <audio src="assets/Sound/KA-CHING.mp3" #Match hidden></audio>
+  <audio src="assets/Sound/WINDOWS-XP-ERROR.mp3" #NotMatch hidden></audio>
+  <audio src="assets/Sound/MLG-HORNS.mp3" #Win hidden></audio>
+
+  <div class="icons">
+    <button mat-mini-fab (click)="changeDiff()" title="Change Difficulty" class="Difficulty">
+      <mat-icon>slow_motion_video</mat-icon>
+    </button>
+
+    <button mat-mini-fab (click)="ToogleAudio()" [attr.title]="AutoPlayAudio ? 'Turn on Music' : 'Turn of Music'"
+      class="Audio">
+      <mat-icon *ngIf="AutoPlayAudio">volume_off</mat-icon>
+      <mat-icon *ngIf="!AutoPlayAudio">volume_up</mat-icon>
+    </button>
+
+    <button mat-mini-fab (click)="reload()" title="reload" class="restart">
+      <mat-icon>loop</mat-icon>
+    </button>
+
+  </div>
+</mat-toolbar>

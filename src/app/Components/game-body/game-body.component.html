@@ -1,0 +1,554 @@
+<div class="game-info">
+  <h3>Cards Left: {{allCardLeftNums[Diff]}}</h3>
+  <!-- <input type="number" [value]="allCardLeftNums[Diff]" (volumechange)="print()"><br> -->
+  <h3>Difficulty: {{allDifficulties[Diff]}}</h3>
+</div>
+
+<div id="Icons" #Icons>
+
+  <div class="game-block" data-icon="home" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-home-4-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="home" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-home-4-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="store" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-store-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="store" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-store-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="mail" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-mail-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="mail" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-mail-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="global" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-global-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="global" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-global-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="pencil" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-pencil-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="pencil" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-pencil-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="ruler" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-ruler-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="ruler" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-ruler-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="bug" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-bug-2-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="bug" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-bug-2-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="tv" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-tv-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="tv" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-tv-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="gamepad" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-gamepad-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="gamepad" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-gamepad-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="heart" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-heart-line"></i>
+    </div>
+  </div>
+
+  <div class="game-block" data-icon="heart" [class]="allDifficulties[Diff]">
+    <div class="Front">
+      <i class="ri-question-mark QM"></i>
+    </div>
+    <div class="Back">
+      <i class="ri-heart-line"></i>
+    </div>
+  </div>
+
+  <!-- medium -->
+  <ng-container #Medium *ngIf="Diff >=1">
+    <div class="game-block" data-icon="medal" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-medal-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="medal" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-medal-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="briefcase" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-briefcase-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="briefcase" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-briefcase-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="flag" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-flag-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="flag" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-flag-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="brush" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-brush-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="brush" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-brush-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="scissors" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-scissors-2-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="scissors" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-scissors-2-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="focus" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-focus-2-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="focus" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-focus-2-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="save" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-save-3-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="save" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-save-3-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="disk" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-u-disk-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="disk" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-u-disk-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="file" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-file-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="file" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-file-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="keynote" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-keynote-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="keynote" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-keynote-line"></i>
+      </div>
+    </div>
+  </ng-container>
+
+  <!-- hard -->
+  <ng-container #Medium *ngIf="Diff >=2">
+    <div class="game-block" data-icon="folders" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-folders-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="folders" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-folders-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="smile" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-home-smile-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="smile" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-home-smile-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="contrast" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-contrast-drop-2-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="contrast" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-contrast-drop-2-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="palette" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-palette-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="palette" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-palette-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="bug-fill" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-bug-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="bug-fill" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-bug-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="computer" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-computer-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="computer" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-computer-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="heart-pulse" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-heart-pulse-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="heart-pulse" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-heart-pulse-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="capsule" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-capsule-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="capsule" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-capsule-fill"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="syringe" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-syringe-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="syringe" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-syringe-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="pushpin" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-pushpin-line"></i>
+      </div>
+    </div>
+
+    <div class="game-block" data-icon="pushpin" [class]="allDifficulties[Diff]">
+      <div class="Front">
+        <i class="ri-question-mark QM"></i>
+      </div>
+      <div class="Back">
+        <i class="ri-pushpin-line"></i>
+      </div>
+    </div>
+  </ng-container>
+</div>
