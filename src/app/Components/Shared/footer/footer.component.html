@@ -1,30 +1,27 @@
-<mat-toolbar color="primary" class="footer">
+<mat-toolbar color="primary" id="footer">
   <div id="contact">
     <div>
       <p>Contact</p>
     </div>
     <div class="contact-icons">
-      <a mat-icon-button matTooltip="Basic" href="https://t.me/ahmed_abdo_571" target="_blank" title="Telegram">
-        <i class="bi bi-telegram"></i>
+      <a mat-fab href="https://t.me/ahmed_abdo_404" target="_blank" title="Telegram">
+        <i class="ri-telegram-line"></i>
       </a>
-      <a mat-icon-button matTooltip="Primary" color="primary" href="https://www.linkedin.com/in/ahmed-abdo-306259229"
-        target="_blank" title="Linkedin">
-        <i class="bi bi-linkedin"></i>
+      <a mat-fab href="https://www.linkedin.com/in/ahmed-abdo-306259229" target="_blank" title="Linkedin">
+        <i class="ri-linkedin-box-fill"></i>
       </a>
-      <a mat-icon-button matTooltip="Primary" color="primary" href="https://github.com/ahmedabdo404" target="_blank"
-        title="Github">
-        <i class="bi bi-github"></i>
+      <a mat-fab href="https://github.com/ahmedabdo404" target="_blank" title="Github">
+        <i class="ri-github-fill"></i>
       </a>
-      <a mat-icon-button matTooltip="Primary" color="primary" href="https://ahmedabdo404.github.io/Ahmed-Abdo-WebSite"
-        target="_blank" title="Website">
-        <i class="bi bi-globe"></i>
+      <a mat-fab href="https://ahmedabdo404.github.io/Ahmed-Abdo-WebSite" target="_blank" title="Website">
+        <i class="ri-global-line"></i>
       </a>
     </div>
   </div>
   <div class="inner-footer">
     <span class="copyright">
       &copy; Copyright <b>Ahmed Abdo</b>
-      . All Rights Reserved 2022
+      . All Rights Reserved {{GetDate}}
     </span>
   </div>
 </mat-toolbar>

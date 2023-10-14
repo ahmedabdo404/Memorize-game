@@ -19,7 +19,7 @@
       <mat-icon>slow_motion_video</mat-icon>
     </button>
 
-    <button mat-mini-fab (click)="ToogleAudio()" [attr.title]="AutoPlayAudio ? 'Turn on Music' : 'Turn of Music'"
+    <button mat-mini-fab (click)="ToogleAudio()" [attr.title]="AutoPlayAudio ? 'Turn off Music' : 'Turn on Music'"
       class="Audio">
       <mat-icon *ngIf="AutoPlayAudio">volume_off</mat-icon>
       <mat-icon *ngIf="!AutoPlayAudio">volume_up</mat-icon>

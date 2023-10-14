@@ -1,5 +1,5 @@
 /* footer */
-.footer {
+#footer {
   position: relative !important;
   top: 0 !important;
   width: 100%;
@@ -57,7 +57,7 @@
 }
 
 @media (max-width: 500px) {
-  .footer #contact p:before {
+  #footer #contact p:before {
     width: 75%;
   }
 }
