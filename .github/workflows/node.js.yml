@@ -28,7 +28,7 @@ jobs:
 
       # 4. Build the Angular app into /docs
       - name: Build Angular app
-        run: npx ng build --configuration production --base-href /TypeTransform/
+        run: npx ng build --configuration production --base-href https://ahmedabdo404.github.io/Memorize-game/
 
       # 5. Commit and push the /docs folder back to the repo
       - name: Commit and push /docs
