@@ -2,9 +2,8 @@ name: Build and Deploy Angular App
 
 on:
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches:
+      - master  # triggers on every push to master
 
 jobs:
   build-and-deploy:
